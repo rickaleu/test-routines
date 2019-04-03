@@ -1,23 +1,32 @@
 package br.com.ricardo.testroutines;
 
-import junit.framework.TestCase;
+import org.junit.Assert;
+import org.junit.Test;
 
 import br.com.ricardo.testroutines.models.Pessoa;
 
-public class PessoaTeste extends TestCase {
+public class PessoaTeste {
 
-    public void testPessoaComIdadeMenorQue16NaoPodeVotar() {
+    @Test(expected = IllegalArgumentException.class)
+    public void testPessoaNegativa(){
 
-        Pessoa p = new Pessoa("Ricardo", -2);
+        Pessoa p = new Pessoa("Luzia", -2);
+    }
+
+    @Test
+    public void testPessoaMenor16NaoPodeVotar() {
+
+        Pessoa p = new Pessoa("Ricardo", 15);
         boolean resultado = p.podeVotar();
-        assertFalse("Teste executado", resultado);
+        Assert.assertFalse(resultado);
 
     }
 
-    public void testPessoaComIdadeMaiorOuIgualA16PodeVotar(){
+    @Test
+    public void testPessoaMaiorOuIgualA16PodeVotar(){
 
         Pessoa p = new Pessoa("Ravene", 31);
         boolean resultado = p.podeVotar();
-        assertTrue("Teste executado", resultado);
+        Assert.assertTrue(resultado);
     }
 }
