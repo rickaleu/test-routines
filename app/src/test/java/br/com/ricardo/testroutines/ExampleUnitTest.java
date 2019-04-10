@@ -1,6 +1,7 @@
 package br.com.ricardo.testroutines;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 

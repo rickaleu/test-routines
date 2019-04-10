@@ -7,6 +7,8 @@ import br.com.ricardo.testroutines.models.Pessoa;
 
 public class PessoaTeste {
 
+    MainActivity activity;
+
     @Test(expected = IllegalArgumentException.class)
     public void testPessoaNegativa(){
 
