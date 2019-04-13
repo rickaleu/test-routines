@@ -1,14 +1,10 @@
 package br.com.ricardo.testroutines;
 
-import android.view.View;
-import android.widget.TextView;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import br.com.ricardo.testroutines.models.Pessoa;
