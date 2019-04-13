@@ -24,6 +24,7 @@ public class MockitoTeste {
 
         activity = new ExpressoActivity();
         Assert.assertNotNull(activity);
+        Assert.assertTrue(true);
 
     }
 
@@ -31,6 +32,7 @@ public class MockitoTeste {
     @Test
     public void test() throws Exception{
         Assert.assertNotNull(activity);
+        Assert.assertTrue(true);
     }
 
 }
