@@ -31,7 +31,6 @@ public class MockitoTeste {
     //Teste principal
     @Test
     public void test() throws Exception{
-        Assert.assertNotNull(activity);
         Assert.assertTrue(true);
     }
 
